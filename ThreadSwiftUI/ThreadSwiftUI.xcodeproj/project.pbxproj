@@ -25,6 +25,8 @@
 		AE7DF39A2D89329100F6785B /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DF3992D89329100F6785B /* CircularProfileImageView.swift */; };
 		AE7DF39C2D89337B00F6785B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DF39B2D89337B00F6785B /* UserCell.swift */; };
 		AE7DF39F2D8940F200F6785B /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DF39E2D8940F200F6785B /* ProfileThreadFilter.swift */; };
+		AE7DF3A22D8948D300F6785B /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DF3A12D8948D300F6785B /* EditProfileView.swift */; };
+		AE7DF3A62D895DAD00F6785B /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DF3A52D895DAD00F6785B /* CreateThreadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		AE7DF3992D89329100F6785B /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		AE7DF39B2D89337B00F6785B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		AE7DF39E2D8940F200F6785B /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
+		AE7DF3A12D8948D300F6785B /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		AE7DF3A52D895DAD00F6785B /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		AE267E672D88721000A280C9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AE7DF3A42D895D9B00F6785B /* ThreadCreation */,
 				AE267E862D888B0900A280C9 /* Profile */,
 				AE267E852D888AFE00A280C9 /* Activity */,
 				AE267E842D888AF100A280C9 /* New Group */,
@@ -238,8 +243,9 @@
 		AE267E862D888B0900A280C9 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				AE7DF3A32D89496A00F6785B /* EditProfile */,
+				AE7DF3A02D8948C300F6785B /* Views */,
 				AE7DF39D2D8940E300F6785B /* Model */,
-				AE267E872D888B1600A280C9 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -259,6 +265,30 @@
 				AE7DF39E2D8940F200F6785B /* ProfileThreadFilter.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AE7DF3A02D8948C300F6785B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE267E872D888B1600A280C9 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE7DF3A32D89496A00F6785B /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				AE7DF3A12D8948D300F6785B /* EditProfileView.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		AE7DF3A42D895D9B00F6785B /* ThreadCreation */ = {
+			isa = PBXGroup;
+			children = (
+				AE7DF3A52D895DAD00F6785B /* CreateThreadView.swift */,
+			);
+			path = ThreadCreation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE267E7D2D888A0C00A280C9 /* FeedView.swift in Sources */,
+				AE7DF3A22D8948D300F6785B /* EditProfileView.swift in Sources */,
 				AE267E832D888AEC00A280C9 /* UploadThreadView.swift in Sources */,
 				AE267E802D888AB100A280C9 /* ExploreView.swift in Sources */,
 				AE7DF39F2D8940F200F6785B /* ProfileThreadFilter.swift in Sources */,
@@ -342,6 +373,7 @@
 				AE7DF39A2D89329100F6785B /* CircularProfileImageView.swift in Sources */,
 				AE7DF39C2D89337B00F6785B /* UserCell.swift in Sources */,
 				AE267E722D88751300A280C9 /* InputTextFieldView.swift in Sources */,
+				AE7DF3A62D895DAD00F6785B /* CreateThreadView.swift in Sources */,
 				AE267E8C2D888EE800A280C9 /* ThreadCell.swift in Sources */,
 				AE267E772D887F5800A280C9 /* RegistrationView.swift in Sources */,
 				AE267E752D8879A300A280C9 /* CapsuleButtonStyle.swift in Sources */,

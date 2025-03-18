@@ -9,7 +9,30 @@ import SwiftUI
 
 struct ActivityView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationStack{
+            ScrollView{
+                VStack{
+                    
+                }
+               
+            }
+            .navigationTitle("New Thread").navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("cancel"){
+                        
+                    }.font(.subheadline).foregroundStyle(.black)
+                }
+            }
+            .toolbar{
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Post"){
+                        
+                    }.font(.subheadline).foregroundStyle(.black).fontWeight(.bold)
+                }
+            }
+        }
     }
 }
 

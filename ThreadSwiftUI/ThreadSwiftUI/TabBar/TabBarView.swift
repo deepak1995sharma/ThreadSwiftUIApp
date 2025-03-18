@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBarView: View {
     @State private var selectedTab = 0
-    
+    @State private var showThreadCreateView:Bool = false
     var body: some View {
         TabView(selection:$selectedTab){
            FeedView()
@@ -27,7 +27,7 @@ struct TabBarView: View {
                 }
                 .onAppear{ selectedTab = 1}
                 .tag(1)
-            UploadThreadView()
+            Text("")
                 .tabItem{
                     Image(systemName: "plus")
                         
@@ -51,6 +51,14 @@ struct TabBarView: View {
                 .onAppear{ selectedTab = 4}
                 .tag(4)
         }
+        .onChange(of: selectedTab, {
+            showThreadCreateView = selectedTab == 2
+        })
+        .sheet(isPresented: $showThreadCreateView, onDismiss:{
+            selectedTab = 0
+        }, content: {
+            CreateThreadView()
+        })
         .tint(.black)
     }
 }
